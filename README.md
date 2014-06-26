@@ -137,7 +137,7 @@ You can get in touch with me via the e-mail noted inside the library.
 
 If you wish to port libZLO to other languages, frameworks or systems, let me know so I can help you out.
 
-You can support me by sending some crypto-money to
+You can support me by sending some BitCoin crypto-money to
 ```
 1KVmMLp5MHm1R3iM7Kprp1rUShinzLVtrV
 ```
