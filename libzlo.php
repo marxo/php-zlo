@@ -4,7 +4,7 @@
  * Naïf PHP implementation of Zamphyr Localization
  *
  * @package libzlo-php
- * @version 0.0.1~r9
+ * @version 0.0.1~r12
  * @author Марко Кажић <marko.kazic@zamphyr.com>
  * @link http://zlo.zamphyr.com
  * @copyright Zamphyr
@@ -21,7 +21,7 @@ namespace Zamphyr\ZLO;
  * Library version
  */
 
-define('LIBZLO_VER', '0.0.1~r11');
+define('LIBZLO_VER', '0.0.1~r12');
 
 /**
  * Class
@@ -229,8 +229,8 @@ class libzlo
          * "Enforced"... such a nice word.
          */
 
-        $ZL_HEADER_FALLBACK =
-        [
+        $ZL_HEADER_FALLBACK = array
+        (
             'VAR' => 'zlo',
             'VER' => NULL,
             'REV' => NULL,
@@ -240,7 +240,7 @@ class libzlo
             'CHR' => 'utf-8',
             'BDO' => NULL,
             'JEZ' => $this->ZL_LANG
-        ];
+        );
 
         $trans_file = $this->ZL_PATH . $ZL_HEADER_LANG . ((is_null($ZL_DM)) ? '' : '-' . $ZL_DM) . self::ZLO_EXT;
 
@@ -267,8 +267,8 @@ class libzlo
             $hname[$i] = substr($this->ZL_FILE[$i+1], 0, 3);
         }
 
-        return $ZL_HEADER =
-        [
+        return $ZL_HEADER = array
+        (
             $hname[0] => $hvalue[0],
             $hname[1] => $hvalue[1],
             $hname[2] => $hvalue[2],
@@ -278,7 +278,7 @@ class libzlo
             $hname[6] => $hvalue[6],
             $hname[7] => $hvalue[7],
             'JEZ' => substr($hvalue[0],0,3)
-        ];
+        );
     }
 
         /**
