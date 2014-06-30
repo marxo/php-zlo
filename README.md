@@ -92,14 +92,14 @@ Version
 To-do
 ----
 
-  - Demo for the masses!
+  - ~~Demo for the masses!~~
   - Date and time implementation
   - Fix extension case sensitivity
   - Check plural formulas
   - Faster soluton for plural testing
   - Some basic debug helpers
   - Evaluator for directories to check for ZLO and create a translation file from it
-  - A better README
+  - ~~A better README~~
 
 
 License
