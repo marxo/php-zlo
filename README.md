@@ -19,6 +19,26 @@ Requirements
 
   - PHP 5.3+
 
+
+To-do
+----
+
+  - ~~Demo for the masses!~~
+  - Faster (non-blocking) file reading and parsing
+  - ISO 6801 compatible date and time implementation
+  - Fix extension case sensitivity
+  - Check plural formulas
+  - Faster soluton for plural testing
+  - Some basic debug helpers
+  - Evaluator for directories to check for ZLO and create a translation file from it
+  - ~~A better README~~
+  - Compatibility with ISO 639-1 (?)
+
+Version
+----
+
+  - 0.0.1
+
 Usage
 ====
 
@@ -53,7 +73,7 @@ or if you're using it inside markup:
 <?= $libzlo->zlo("Why Friday?"); ?>
 ```
 
-You can pass a number as a parameter and get the adequate non-singular form as a translation. This makes sense for non-English speakers, Arabic in particular.
+You can pass a number as a parameter and get the adequate non-singular form of the phrase for that number as a translation. This makes sense for non-English speakers, Arabic in particular.
 
 ```php
 <?= $libzlo->zlo("pencil",13); ?>
@@ -83,24 +103,6 @@ You can get the stats for a translation file using *zlo_stat()* It returns an ar
 ```php
 $libzlo->zlo_stat($libzlo->ZL_LANG);
 ```
-
-Version
-----
-
-  - 0.0.1
-
-To-do
-----
-
-  - ~~Demo for the masses!~~
-  - Date and time implementation
-  - Fix extension case sensitivity
-  - Check plural formulas
-  - Faster soluton for plural testing
-  - Some basic debug helpers
-  - Evaluator for directories to check for ZLO and create a translation file from it
-  - ~~A better README~~
-
 
 License
 ----
