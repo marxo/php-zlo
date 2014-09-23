@@ -1,6 +1,8 @@
 libZLO for PHP
 =========
 
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/zamphyr/zlo?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
 Zamphyr Localizaton (ZLO) is a lightweight, easy to use, text-based & naïf translation and localization system, made to facilitate inline syntactic translation and localization, and KISS in the process.
 
 Features
