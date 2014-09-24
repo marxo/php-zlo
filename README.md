@@ -106,6 +106,20 @@ You can get the stats for a translation file using *zlo_stat()* It returns an ar
 $libzlo->zlo_stat($libzlo->ZL_LANG);
 ```
 
+Contact & donations
+----
+You can get in touch with me via the e-mail noted inside the library or click the Gitter badge and we can chat about ZLO.
+
+If you wish to port libZLO to other languages, frameworks or systems, let me know so I can help you out.
+
+You can support me by sending some BitCoin crypto-money to
+```
+1KVmMLp5MHm1R3iM7Kprp1rUShinzLVtrV
+```
+
+**Dif-tor heh smusma!**
+
+
 License
 ----
 This is free and unencumbered software released into the public domain.
@@ -132,16 +146,3 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <http://unlicense.org/>
-
-**Dif-tor heh smusma!**
-
-Contact & donations
-----
-You can get in touch with me via the e-mail noted inside the library.
-
-If you wish to port libZLO to other languages, frameworks or systems, let me know so I can help you out.
-
-You can support me by sending some BitCoin crypto-money to
-```
-1KVmMLp5MHm1R3iM7Kprp1rUShinzLVtrV
-```
