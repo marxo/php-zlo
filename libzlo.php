@@ -69,7 +69,7 @@ class libzlo
     private function zl2br()
     {
 
-        return (stristr(PHP_OS, 'WIN') || stristr(PHP_OS, 'DAR')) ? '\r\n' : '\n';
+        return (stristr(PHP_OS, 'WIN') || stristr(PHP_OS, 'DAR')) ? "\r\n" : "\n";
 
     }
 
@@ -416,7 +416,7 @@ class libzlo
                         // Check if there is a new line character
                         if (strpos($this->ZL_FILE[$i+1], "\\n")) {
                             // Return the translation with valid new line character
-                            return htmlspecialchars(str_replace("\\n", nl2br($this->zl2br()), substr($this->ZL_FILE[$i+1],3)));
+                            return str_replace("\\n", nl2br($this->zl2br()), htmlspecialchars(substr($this->ZL_FILE[$i+1],3)));
 
                         }
                         else
@@ -455,7 +455,7 @@ class libzlo
                         // Is there a new lie character in the translation?
                         if (strpos($this->ZL_FILE[$i+$nivo+1], "\\n")){
                             // Return the translation with valid new line character
-                            return htmlspecialchars(str_replace("\\n", nl2br($this->zl2br()), substr($this->ZL_FILE[$i+$nivo+1], 3)));
+                            return str_replace("\\n", nl2br($this->zl2br()), htmlspecialchars(substr($this->ZL_FILE[$i+$nivo+1], 3)));
 
                         }
                         else
