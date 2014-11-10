@@ -4,7 +4,7 @@
  * Naïf PHP implementation of Zamphyr Localization
  *
  * @package libzlo-php
- * @version 0.0.1~r12
+ * @version 0.0.3
  * @author Марко Кажић <marko.kazic@zamphyr.com>
  * @link http://zlo.zamphyr.com
  * @copyright Zamphyr
@@ -21,7 +21,7 @@ namespace Zamphyr\ZLO;
  * Library version
  */
 
-define('LIBZLO_VER', '0.0.1~r12');
+define('LIBZLO_VER', '0.0.3');
 
 /**
  * Class
@@ -127,7 +127,6 @@ class libzlo
             else
                 return $nivo = 5;
 
-            // $nivo = (($n==0) ? 6 : $n==1 ? 1 : $n==2 ? 2 : $n%100>=3 && $n%100<=10 ? 3 : $n%100>=11 ? 4 : 5);
         }
 
         elseif ($ZL_LANG_PLURAL === 'csb') {
@@ -168,7 +167,7 @@ class libzlo
 
         elseif ($ZL_LANG_PLURAL === 'lit') {
 
-            return $nivo = ($n%10==1 && $n%100!=11 ? 1 : $n%10>=2 && ($n%100<10 or $n%100>=20) ? 2 : 3);
+            return $nivo = ($n%10==1 && $n%100!=11 ? 1 : $n%10>=2 && ($n%100<10 || $n%100>=20) ? 2 : 3);
 
         }
 

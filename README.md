@@ -3,18 +3,18 @@ libZLO for PHP
 
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/zamphyr/zlo?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-Zamphyr Localizaton (ZLO) is a lightweight, easy to use, text-based & naïf translation and localization system, made to facilitate inline syntactic translation and localization, and KISS in the process.
+Zamphyr Localizaton (ZLO) is a lightweight, easy to use, text-based & naïf translation and localization system, made to facilitate inline replacable translation and localization, and naive in the process.
 
 Features
 ---
 
-  - ISO 639-2 & ISO-639-3 compatible
-  - Inline translation like gettext
+  - ISO 639-2 & ISO 639-3 *partly* compatible
+  - ISO 15924 compatible
+  - Inline replacement translation like gettext
   - Plurals translation with natural number calculation
   - Translation domains for modular translation (plugins, addons, etc...)
   - Scan directory for available translation files
   - Helpers in header for HTML encoding, language and writing direction
-  - Parsed in browsers so it's scriptable
 
 Requirements
 ----
@@ -35,11 +35,13 @@ To-do
   - Evaluator for directories to check for ZLO and create a translation file from it
   - ~~A better README~~
   - Compatibility with ISO 639-1 (?)
+  - PSR-1 compatibility
+  - PHPDoc documentation
 
 Version
 ----
 
-  - 0.0.2
+  - 0.0.3
 
 Usage
 ====
