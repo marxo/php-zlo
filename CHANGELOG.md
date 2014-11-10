@@ -1,6 +1,11 @@
 Changelog
 =======
 
+0.0.3
+-----
+
+ - [FIX] Minor bugfixes, replaced `or` with `||` and applied code style changes
+
 0.0.2
 ------
 
