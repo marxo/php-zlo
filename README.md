@@ -1,4 +1,4 @@
-libZLO for PHP
+ZLO for PHP
 =========
 
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/zamphyr/zlo?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
@@ -35,13 +35,13 @@ To-do
   - Evaluator for directories to check for ZLO and create a translation file from it
   - ~~A better README~~
   - Compatibility with ISO 639-1 (?)
-  - PSR-1 compatibility
-  - PHPDoc documentation
+  - PSR compatibility
+  - DocBlocks documentation
 
 Version
 ----
 
-  - 0.0.3
+  - 0.0.4
 
 Usage
 ====

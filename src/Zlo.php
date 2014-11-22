@@ -1,35 +1,22 @@
 <?php
 
+namespace Zamphyr\Zlo;
+
 /**
  * Naïf PHP implementation of Zamphyr Localization
  *
- * @package libzlo-php
- * @version 0.0.3
+ * @package Zlo
+ * @version 0.0.4
  * @author Марко Кажић <marko.kazic@zamphyr.com>
  * @link http://zlo.zamphyr.com
  * @copyright Zamphyr
- * @license
+ * @license Unlicense
  */
 
-/**
- * Define namespace for Zamphyr
- */
-
-namespace Zamphyr\ZLO;
-
-/**
- * Library version
- */
-
-define('LIBZLO_VER', '0.0.3');
-
-/**
- * Class
- */
-
-class libzlo
+class Zlo
 {
     // Not really elegant, I get it.
+    const VER = "0.0.4";
     const ZLO_EXT = '.zl';
     // ZLID code for currently loaded translation.
     public $ZL_LANG;
@@ -66,7 +53,7 @@ class libzlo
      * Checks platform and returns proper line ending character.
      */
 
-    private function zl2br()
+    private function zl2Br()
     {
 
         return (stristr(PHP_OS, 'WIN') || stristr(PHP_OS, 'DAR')) ? "\r\n" : "\n";
@@ -78,7 +65,7 @@ class libzlo
      * which needs to be printed out based on the artificial level number.
      */
 
-    private function zlo_plural_check( &$n )
+    private function zloPlural( &$n )
     {
 
         $ZL_LANG_PLURAL = substr($this->ZL_LANG, 0, 3);
@@ -221,7 +208,7 @@ class libzlo
      * When file is not loaded returns fallback header info.
      */
 
-    public function zlo_header($ZL_HEADER_LANG, $ZL_DM = NULL)
+    public function zloHeader($ZL_HEADER_LANG, $ZL_DM = NULL)
     {
         /**
          * Header fallback. Anti-apocalyptic measure. UTF-8 is enforced.
@@ -285,7 +272,7 @@ class libzlo
      * in the initialized folder for libzlo.
      */
 
-    public function zlo_lang_list()
+    public function zloLangList()
     {
         for ($i=0; $i < count(array_slice(scandir($this->ZL_PATH),2)); $i++)
         {
@@ -304,7 +291,7 @@ class libzlo
      */
 
 
-    public function zlo_stat( $ZL_LANG, $ZL_DM = NULL )
+    public function zloStat( $ZL_LANG, $ZL_DM = NULL )
     {
 
         $stat_oznaka = $stat_izvora = $stat_prevoda = 0;
@@ -398,7 +385,7 @@ class libzlo
             }
         }
 
-        $nivo = $this->zlo_plural_check( $n );
+        $nivo = $this->zloPlural( $n );
 
         /**
          * Evil deeds
@@ -415,7 +402,7 @@ class libzlo
                         // Check if there is a new line character
                         if (strpos($this->ZL_FILE[$i+1], "\\n")) {
                             // Return the translation with valid new line character
-                            return str_replace("\\n", nl2br($this->zl2br()), htmlspecialchars(substr($this->ZL_FILE[$i+1],3)));
+                            return str_replace("\\n", nl2br($this->zl2Br()), htmlspecialchars(substr($this->ZL_FILE[$i+1],3)));
 
                         }
                         else
@@ -454,7 +441,7 @@ class libzlo
                         // Is there a new lie character in the translation?
                         if (strpos($this->ZL_FILE[$i+$nivo+1], "\\n")){
                             // Return the translation with valid new line character
-                            return str_replace("\\n", nl2br($this->zl2br()), htmlspecialchars(substr($this->ZL_FILE[$i+$nivo+1], 3)));
+                            return str_replace("\\n", nl2br($this->zl2Br()), htmlspecialchars(substr($this->ZL_FILE[$i+$nivo+1], 3)));
 
                         }
                         else
