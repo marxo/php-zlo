@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Zamphyr\\Zlo": "src/"
+            "Zamphyr\\Zlo\\": "src/"
         }
     },
     "require": {
