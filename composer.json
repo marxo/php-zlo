@@ -1,0 +1,25 @@
+{
+    "name": "zamphyr/zlo",
+    "description": "Zamphyr Localizaton (ZLO) is a lightweight, easy to use translation and localization system for PHP.",
+    "keywords": ["localization","gettext","l10n","i18n","language","translation"],
+    "homepage":"http://github.com/zamphyr/php-zlo",
+    "license": "Unlicense",
+    "authors": [
+        {
+            "name": "Марко Кажић",
+            "email": "marko.kazic@zamphyr.com",
+            "homepage": "http://github.com/marxo"
+        }
+    ],
+    "support": {
+        "email": "marko.kazic@zamphyr.com"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zamphyr\\Zlo": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.3"
+    }
+}

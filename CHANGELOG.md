@@ -1,6 +1,12 @@
 Changelog
 =======
 
+0.0.4
+-----
+
+ - [WARN] Backward incompatible 1.0.0 prep build
+ - [NEW] PSR-4 code style and Composer adoption
+
 0.0.3
 -----
 
