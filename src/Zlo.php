@@ -279,7 +279,7 @@ class Zlo
         
         for ($i=0; $i < $langs_count; $i++)
         {
-            if (stripos($langs_array)[$i], self::ZLO_EXT))
+            if (stripos($langs_array[$i], self::ZLO_EXT))
             {
                 $ZL_LIST_TRANSLATIONS[$i] = $langs_array[$i];
             }
