@@ -73,12 +73,12 @@ class Zlo
 
         if ($ZL_LANG_PLURAL === 'ach' || $ZL_LANG_PLURAL === 'aka' || $ZL_LANG_PLURAL === 'amh' || $ZL_LANG_PLURAL === 'arn' || $ZL_LANG_PLURAL === 'bre' || $ZL_LANG_PLURAL === 'fil' || $ZL_LANG_PLURAL === 'fra' || $ZL_LANG_PLURAL === 'gun' || $ZL_LANG_PLURAL === 'lin' || $ZL_LANG_PLURAL === 'mfe' || $ZL_LANG_PLURAL === 'mlg' || $ZL_LANG_PLURAL === 'mri' || $ZL_LANG_PLURAL === 'oci' || $ZL_LANG_PLURAL === 'tgk' || $ZL_LANG_PLURAL === 'tir' || $ZL_LANG_PLURAL === 'tur' || $ZL_LANG_PLURAL === 'uzb' || $ZL_LANG_PLURAL === 'wln')
 
-            return $nivo = ($n > 1) ? 2 : 1; // Should be fine
+            return ($n > 1) ? 2 : 1; // Should be fine
 
         elseif ($ZL_LANG_PLURAL === 'aym' || $ZL_LANG_PLURAL === 'bod' || $ZL_LANG_PLURAL === 'cgg' || $ZL_LANG_PLURAL === 'dzo' || $ZL_LANG_PLURAL === 'fas' || $ZL_LANG_PLURAL === 'ind' || $ZL_LANG_PLURAL === 'jpn' || $ZL_LANG_PLURAL === 'jbo' || $ZL_LANG_PLURAL === 'kat' || $ZL_LANG_PLURAL === 'kaz' || $ZL_LANG_PLURAL === 'kor' || $ZL_LANG_PLURAL === 'kir' || $ZL_LANG_PLURAL === 'lao' || $ZL_LANG_PLURAL === 'msa' || $ZL_LANG_PLURAL === 'mya' || $ZL_LANG_PLURAL === 'sah' || $ZL_LANG_PLURAL === 'sun' || $ZL_LANG_PLURAL === 'tha' || $ZL_LANG_PLURAL === 'tat' || $ZL_LANG_PLURAL === 'uig' || $ZL_LANG_PLURAL === 'vie' || $ZL_LANG_PLURAL === 'wol' || $ZL_LANG_PLURAL === 'zho')
         {
 
-            return $nivo = 1;
+            return 1;
 
         }
         elseif ($ZL_LANG_PLURAL === 'srp' || $ZL_LANG_PLURAL === 'bos' || $ZL_LANG_PLURAL === 'hrv' || $ZL_LANG_PLURAL === 'rus' || $ZL_LANG_PLURAL === 'ukr' || $ZL_LANG_PLURAL === 'bel' )
@@ -198,7 +198,7 @@ class Zlo
         /*
             afr, arg, ast, aze, bul, ben, brx, cat, dan, deu, doi, ell, eng, epo, spa, est, eus, ful, fin, fao, fur, fry, frr, frs, glg, guj, hau, heb, hin, hne, hye, hun, ina, ita, kan, kur, ltz, mai, mal, mon, mni, mar, mkd, nah, nap, nob, nno, nor, nep, nld, sme, nso, ori, pus, pan, pap, pms, por, roh, kin, sat, sco, snd, sin, som, son, sqi, swa, swe, tam, tel, tuk, urd, yor
         */
-            return $nivo = ($n != 1) ? 2 : 1;
+            return ($n != 1) ? 2 : 1;
         }
 
     }
