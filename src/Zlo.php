@@ -274,11 +274,14 @@ class Zlo
 
     public function zloLangList()
     {
-        for ($i=0; $i < count(array_slice(scandir($this->ZL_PATH),2)); $i++)
+        $langs_array = array_slice(scandir($this->ZL_PATH),2);
+        $langs_count = count($langs_array);
+        
+        for ($i=0; $i < $langs_count; $i++)
         {
-            if (stripos(array_slice(scandir($this->ZL_PATH),2)[$i], self::ZLO_EXT))
+            if (stripos($langs_array)[$i], self::ZLO_EXT))
             {
-                $ZL_LIST_TRANSLATIONS[$i] = array_slice(scandir($this->ZL_PATH),2)[$i];
+                $ZL_LIST_TRANSLATIONS[$i] = $langs_array[$i];
             }
         }
 
