@@ -253,7 +253,7 @@ class Zlo
             $hname[$i] = substr($this->ZL_FILE[$i+1], 0, 3);
         }
 
-        return $ZL_HEADER = array
+        return array
         (
             $hname[0] => $hvalue[0],
             $hname[1] => $hvalue[1],
